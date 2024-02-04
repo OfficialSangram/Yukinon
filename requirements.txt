@@ -17,7 +17,7 @@ EmojiCaptcha
 captcha
 googletrans
 telegraph
-pyrogram==1.4.16
+Pyrogram==2.0.106
 pyyaml
 gitpython
 dnspython==2.1.0
