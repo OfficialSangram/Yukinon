@@ -20,3 +20,5 @@ telegraph
 pyrogram==1.4.16
 pyyaml
 gitpython
+dnspython==2.1.0
+httpcore==0.14.0
