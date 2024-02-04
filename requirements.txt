@@ -21,4 +21,4 @@ Pyrogram==2.0.106
 pyyaml
 gitpython
 dnspython==2.1.0
-httpcore==0.14.0
+httpcore==4.4.16
