@@ -7,5 +7,6 @@ RUN pip install --upgrade pyrogram
 RUN pip3 install -U pip
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
+ENV PATH="/home/bot/bin:$PATH"
 
-CMD ["bash", "start"]
+CMD ["python3","-m","Yukinon"]
