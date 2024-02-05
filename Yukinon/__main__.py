@@ -381,14 +381,9 @@ async def help_button(client, query, _):
 
     return await client.answer_callback_query(query.id)
 
-
-import asyncio
-
-async def main():
-    # Your asynchronous code here
-    
-    if __name__ == "__main__":
-        try:
-            asyncio.run(main())
-        except Exception as e:
-            print(f"An error occurred: {e}")
+if __name__ == "__main__":
+    install()
+    with closing(loop):
+        with suppress(asyncio.exceptions.CancelledError):
+            loop.run_until_complete(start_bot())
+        loop.run_until_complete(asyncio.sleep(3.0)) 
