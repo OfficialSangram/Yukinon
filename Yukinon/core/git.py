@@ -2,8 +2,9 @@ import asyncio
 import shlex
 from typing import Tuple
 
-from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
+
+Repo = "https://github.com/OfficialSangram/Yukinon"
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:
     async def install_requirements():
