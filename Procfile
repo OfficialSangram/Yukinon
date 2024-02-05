@@ -1,1 +1,1 @@
-worker: python3 Yukinon
+worker: python3 -m Yukinon
