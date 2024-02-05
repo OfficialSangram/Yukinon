@@ -18,6 +18,6 @@ captcha
 googletrans
 telegraph
 pyyaml
-gitpython
+gitpython==3.1.24
 dnspython==2.1.0
 httpcore==1.0.2
