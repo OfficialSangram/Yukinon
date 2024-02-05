@@ -383,7 +383,4 @@ async def help_button(client, query, _):
 
 if __name__ == "__main__":
     install()
-    with closing(loop):
-        with suppress(asyncio.exceptions.CancelledError):
-            loop.run_until_complete(start_bot())
-        loop.run_until_complete(asyncio.sleep(3.0)) 
+    asyncio.run(start_bot())
